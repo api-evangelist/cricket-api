@@ -1,0 +1,41 @@
+name: Cricket API
+description: 'A cricket data API advertised at cricket-api.net -- live scores, matches, and related endpoints per
+  its documentation page. ACCESS REALITY, stated plainly: the production base URL is not published; the docs describe
+  every endpoint against the placeholder api.example.com and carry their own implementation notice that the base
+  URL, paths, headers and responses are documentation examples to be replaced after signup. Listed on the surfaces
+  that are actually served; the rating reflects what is published.'
+url: https://raw.githubusercontent.com/api-evangelist/cricket-api/refs/heads/main/apis.yml
+created: '2026-09-03'
+modified: '2026-09-03'
+specificationVersion: '0.21'
+tags:
+- Cricket
+- Sports
+- Sports Data
+- Live Scores
+apis:
+- name: Cricket API
+  description: Documented cricket endpoints (matches, live scores) behind a signup-gated, undisclosed base URL.
+    No machine-readable contract is published.
+  humanURL: https://cricket-api.net/api-documentation/
+  tags:
+  - Cricket
+  - Sports Data
+  properties:
+  - type: Documentation
+    url: https://cricket-api.net/api-documentation/
+common:
+- type: Website
+  url: https://cricket-api.net
+maintainers:
+- FN: Cricket API
+  url: https://cricket-api.net
+x-source:
+  via: apis.io/add submission 5fe416e1, parked no_consumable_surface, approved by Kin 2026-09-03
+  fetched: '2026-09-03'
+  note: 'GUARD -- DO NOT RECONSTRUCT AN OPENAPI FROM THE DOCS. The documentation page states in its own implementation
+    notice that its base URL, endpoint paths, auth header, field names, quotas and example responses are examples,
+    rooted at api.example.com. api.cricket-api.net does not resolve, and tennis-api.net serves a byte-identical
+    template. A generated contract would describe a service the page itself calls hypothetical. If the provider
+    supplies a confirmed production base URL, harvest the real thing and delete this note. Probed 2026-09-03: site
+    200, docs 200, control path 404.'
