@@ -1,0 +1,30 @@
+generated: '2026-09-04'
+method: searched
+source: https://cricket-api.net/api-documentation/
+rate_limits:
+- limit_count: 0
+  scope: null
+  window: null
+  limit: null
+  note: >-
+    The documentation has a Rate Limits section but publishes no number. It states "Final quotas and
+    response headers depend on the selected plan. Do not publish numeric limits until they are
+    confirmed." The header names below are printed with literal placeholder values (PLAN_LIMIT,
+    REMAINING_REQUESTS, RESET_TIMESTAMP, RETRY_SECONDS) under the heading "Possible Rate-Limit
+    Headers", and the page's global implementation notice says quotas and headers on the page are
+    documentation placeholders. They are recorded as illustrative, not as a runtime contract, and
+    they were not observed on a live response because no production host is published.
+headers_illustrative:
+- name: X-RateLimit-Limit
+  documented_value: PLAN_LIMIT
+- name: X-RateLimit-Remaining
+  documented_value: REMAINING_REQUESTS
+- name: X-RateLimit-Reset
+  documented_value: RESET_TIMESTAMP
+- name: Retry-After
+  documented_value: RETRY_SECONDS
+exhaustion_status_documented: 429
+observed: false
+observed_note: >-
+  No live rate-limit header was observed. api.cricket-api.net does not resolve and the docs give no
+  production base URL, so there is no endpoint to send an unauthenticated request to.

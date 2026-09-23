@@ -1,0 +1,38 @@
+generated: '2026-09-04'
+method: searched
+source: https://cricket-api.net/api-pricing/
+plans:
+- plan_count: 0
+  currency: null
+  note: >-
+    The pricing page is published and reachable (HTTP 200) and names four access tiers, but it
+    carries no price, no request allowance and no quota for any of them. Every price cell reads
+    "Current plan price", every quota cell reads "Add official quota" or "Add the official allowance
+    for each plan", and the page states in its own copy: "The plan structure below is designed for
+    clear comparison. Add the final prices, quotas and exact inclusions supplied by the API provider
+    before publishing the page." Nothing on the page is purchasable or comparable, so plan_count is
+    recorded as 0 rather than 4 — a tier label with no price and no quota is not a published plan.
+tiers_advertised:
+- name: Starter / Developer
+  price: null
+  quota: null
+  positioning: prototypes, learning projects, internal tools, early-stage integration testing
+- name: Professional
+  price: null
+  quota: null
+  positioning: production websites, mobile apps, fantasy products, media platforms
+- name: Business
+  price: null
+  quota: null
+  positioning: established commercial products, multiple applications or team members
+- name: Enterprise
+  price: null
+  quota: null
+  positioning: custom quotation; specialised coverage, throughput, licensing or infrastructure
+acquisition:
+  model: contact-sales
+  cta: https://cricket-api.net/api-pricing/
+  mechanism: >-
+    "Get API Access" links to the pricing page, which opens a name / email / WhatsApp enquiry modal.
+    There is no self-serve signup, no account dashboard and no published checkout.
+  contact: info@cricket-api.net

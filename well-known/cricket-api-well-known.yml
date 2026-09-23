@@ -1,0 +1,45 @@
+generated: '2026-09-04'
+method: probed
+source: live GET of the named /.well-known/ paths on every host this record knows
+note: >-
+  Every named path 404s on the only host that resolves (cricket-api.net; www redirects to it with
+  301). A control request to https://cricket-api.net/this-does-not-exist-xyz also returned 404, so
+  these are genuine misses, not a catch-all answering 200 for everything. No WellKnown or SecurityTxt
+  pointer is emitted, because nothing here is a served document. api.cricket-api.net has no DNS
+  record, so there is no API host to probe.
+hosts:
+- host: cricket-api.net
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/aauth-resource.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: www.cricket-api.net
+  documents:
+  - path: /.well-known/security.txt
+    status: 301
+  - path: /.well-known/openid-configuration
+    status: 301
+  - path: /.well-known/oauth-authorization-server
+    status: 301
+  - path: /.well-known/api-catalog
+    status: 301
+  - path: /.well-known/ai-plugin.json
+    status: 301
+control:
+  url: https://cricket-api.net/this-does-not-exist-xyz
+  status: 404
