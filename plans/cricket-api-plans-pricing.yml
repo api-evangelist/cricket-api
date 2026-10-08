@@ -36,3 +36,15 @@ acquisition:
     "Get API Access" links to the pricing page, which opens a name / email / WhatsApp enquiry modal.
     There is no self-serve signup, no account dashboard and no published checkout.
   contact: info@cricket-api.net
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models: []
+  units: []
+  plans:
+  - name: ''
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
