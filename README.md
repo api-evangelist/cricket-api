@@ -1,4 +1,4 @@
-# cricket-api
+# Cricket API
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,18 +64,105 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Cricket API (cricket-api.net) advertises a REST + WebSocket cricket data service — fixtures, live
-scores, ball-by-ball events, player and team statistics, betting odds and win-probability
-predictions.
+A cricket data API advertised at cricket-api.net -- live scores, fixtures, ball-by-ball events, player and team statistics, betting odds and win-probability predictions, over REST and a documented WebSocket stream. ACCESS REALITY, stated plainly: the production base URL is not published; the docs describe every endpoint against the placeholder api.example.com and carry their own implementation notice that the base URL, paths, headers, quotas and responses are documentation examples to be replaced after signup. Four plan tiers are named but no price or quota is published for any of them. Listed on the surfaces that are actually served; the rating reflects what is published.
 
-**Access reality, stated plainly.** As of the 2026-09-04 probe the production base URL is not
-published. The developer documentation carries its own implementation notice saying the base URL,
-endpoint paths, authentication header, field names, quotas and example responses on the page are
-placeholders to be replaced with the confirmed production specification, and every example is
-rooted at `api.example.com`. `api.cricket-api.net` does not resolve. No OpenAPI, AsyncAPI, GraphQL,
-MCP or A2A surface is served on any host this record knows.
+**Areas:** Cricket · Sports · Sports Data · Live Scores · Cricket Statistics · Cricket Odds · Cricket Predictions
 
-This profile therefore records what is actually published — the documentation, coverage and pricing
-pages, and the measured absence of a machine-readable contract — and deliberately does **not**
-reconstruct a specification from placeholder documentation. If the provider supplies a confirmed
-production base URL, the real contract will be harvested and this note removed.
+## Cricket API on APIs.io
+
+Everything profiled for Cricket API is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/cricket-api/](https://apis.io/providers/cricket-api/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Cricket API](https://apis.io/apis/cricket-api/cricket-api/) — Documented cricket endpoints (fixtures, live scores, ball-by-ball, statistics, odds, predictions, WebSocket) behind a sales-gated, undisclosed base URL. No…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [Moved to /providers/cricket-api/](https://apis.io/servers/cricket-api/cricket-api/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Cricket Api Domain Security](https://apis.io/security/cricket-api/cricket-api-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Cricket Api Plans Pricing](https://apis.io/plans/cricket-api/cricket-api-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Cricket Api Rate Limits](https://apis.io/rate-limits/cricket-api/cricket-api-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://cricket-api.net)
+- [Pricing](https://cricket-api.net/api-pricing/)
+- [Blog](https://cricket-api.net/api-news/)
+
+## API Evangelist rating
+
+**Kin Score 13.3** — emerging · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 60.0 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 11.9 |
+| Access clarity | 31.6 |
+
+**Agent readiness 4.7** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | platform (partial credit) |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 5.9** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/cricket-api/](https://apis.io/providers/cricket-api/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Cricket API: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/cricket-api/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
